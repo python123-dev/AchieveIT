@@ -1,4 +1,5 @@
 import { MapPin, Phone, Clock, Instagram, Youtube, Mail } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
           <div className="space-y-6">
             <div className="flex items-center gap-3">
               <div className="bg-white p-1.5 rounded-lg">
-                <img src="/logo.png" alt="AchieveIT Logo" className="h-8 w-auto object-contain" />
+                <img src={logo} alt="AchieveIT Logo" className="h-8 w-auto object-contain" />
               </div>
               <div className="flex flex-col">
                 <span className="text-xl font-bold tracking-tight text-white leading-none">

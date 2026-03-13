@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Menu, X, Phone } from 'lucide-react';
 import { useState } from 'react';
+import logo from '../assets/logo.png';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="AchieveIT Logo" className="h-12 w-auto object-contain" />
+            <img src={logo} alt="AchieveIT Logo" className="h-12 w-auto object-contain" />
             <div className="flex flex-col">
               <span className="text-2xl font-bold tracking-tight text-slate-900 leading-none">
                 ACHIEVE IT
